@@ -103,7 +103,7 @@ def sectest():
 cam = cv2.VideoCapture(0)
 rop=0
 cv2.namedWindow("test")
-print("Train your data \n Press what you wish to do \n 1.Train with perfect parts. \n 2.Train with defected parts \n 3.Put Test perfect images \n 4.Put test defected part\n")
+print("Train your data \n These will be the steps to follow \n 1.Train with perfect parts. \n 2.Train with defected parts \n 3.Put Test perfect parts \n 4.Put test defected part\n")
 rop = int(input())
 img_counter=0
 for i in range(0,4):
