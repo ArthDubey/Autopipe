@@ -1,5 +1,5 @@
-# Automatic pipeline for Making your own Image classifier
-High paced high accuracy DIY image classifier
+# Automatic pipeline for Making your own Texture classifier
+High paced high accuracy DIY Texture classifier
 # Aim
 
 This Project aims to build an image classifier that is extremely convenient to personalise and to train your own data in 3 simple steps. Accuracy is substaintially high for all regular purposes.
