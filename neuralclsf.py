@@ -54,19 +54,23 @@ target_labels=np.asarray(labels)
 #hidden_biases = tf.Variable(tf.zeros([2])
 #input_layer = tf.matmul(input_images, input_weights)
 
-model = keras.Sequential([
-                          keras.layers.Flatten(input_shape=(127,127,3)),
-                          keras.layers.Dense(512, activation=tf.nn.relu),
-                          keras.layers.Dense(512, activation=tf.nn.relu),
-                          keras.layers.Dense(2, activation=tf.nn.softmax),
-                          ])
+model = Sequential()
+model.add(Conv2D(40, kernel_size=(5, 5), strides=(1, 1),
+                 activation='relu',
+                 input_shape=(127,127,3)))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+model.add(Conv2D(56, (4, 4), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Flatten())
+model.add(Dense(600, activation='relu'))
+model.add(Dense(2, activation='softmax'))
 
 
 sgd = optimizers.Adam(lr=0.001)
 model.compile(optimizer='sgd',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
-model.fit(input_images,target_labels,epochs=40)
+model.fit(input_images,target_labels,epochs=140)
 
 
 
