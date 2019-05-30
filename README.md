@@ -4,6 +4,8 @@ High paced high accuracy DIY Texture classifier
 
 This Project aims to build an image classifier that is extremely convenient to personalise and to train your own data in 3 simple steps. Accuracy is substaintially high for all regular purposes.
 
+## Background
+Visual classification for quality assurance and other purposes in the mechanical field has been game-changing. Inspired by the recent success of Convolutional neural networks in estimating the life of cutting tools, This project has tried to automate the process of texture classification for mechanical tools with CNN’s.
 ## Getting Started
 
 Clone the repository in your system and follow these steps-
@@ -52,6 +54,8 @@ pip install numpy
 Clone the repository in your system and follow these steps-
 1. Follow getting started.
 
+## Approach
+An intuitive program is developed for anyone to train their personalized data and use the model for classification. This has vast applications in quality assurance, inventory classification, and other similar purposes. The network chosen for the system is tested for its versatility to work with a plethora of textures by means of images. The pipeline was built within mind to put minimal effort on the side of the user. Although the system itself is quite flexible so it is easy for an experienced person to change even the hyperparameters according to his/her liking. It has 3 modules, Data feed, Training, and usage. Data feed automates the data input by just a click of a button. The network is a 2D CNN which saves the defining features of the perfect and imperfect model. Usage is also simply accomplished by running a program.
 ## Running the tests
 
 It is explained in Getting started subsection.
