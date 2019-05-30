@@ -60,10 +60,13 @@ An intuitive program is developed for anyone to train their personalized data an
 
 It is explained in Getting started subsection.
 
-
+## Conclusion
+The network employed is highly versatile and has great accuracy for most general purposes.
 ## Contributing
 
 Janhavi Subedarpage
+
+
 ## Authors
 
 * **Arth Dubey** 
